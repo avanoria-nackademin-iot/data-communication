@@ -3,16 +3,31 @@
 #include "WifiConnection.h"
 #include "ConfigWebServer.h"
 
-const String deviceName = "temp_device";
-const String measurementType = "celsius";
-
+DeviceSettings settings;
+SettingsStorage storage;
+WifiConnection wifiConnection;
+ConfigWebServer configWebServer(settings, storage, wifiConnection);
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(115200);
+  delay(2000);
+
+  storage.load(settings);
+
+  bool connected = false;
+
+  if (!settings.wifiSSID.isEmpty()) {
+    connected = wifiConnection.connectToNetwork(settings, 15000);
+  }
+
+  if (!connected) {
+    wifiConnection.startSetupAccessPoint();
+  }
+
+  configWebServer.begin();
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  configWebServer.handleClient();
 }
