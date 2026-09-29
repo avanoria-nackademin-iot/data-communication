@@ -78,7 +78,7 @@ bool WifiConnection::startSetupAccessPoint() {
   setupMode = true;
   WiFi.mode(WIFI_AP);
 
-  const bool started = WiFi.softAP(SetupSSID, SetupPass)
+  const bool started = WiFi.softAP(SetupSSID, SetupPASS);
 
   if (started) {
     Serial.println("Configuration Wizard Started.");
@@ -88,7 +88,7 @@ bool WifiConnection::startSetupAccessPoint() {
     Serial.print("Open http://");
     Serial.println(WiFi.softAPIP());
   } else {
-    serial.println("Unable to start configuration wizard.");
+    Serial.println("Unable to start configuration wizard.");
   }
 
   return started;

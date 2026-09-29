@@ -24,7 +24,7 @@ void SettingsStorage::load(DeviceSettings& settings) {
   preferences.end();
 }
 
-void SettingsStorage::save(DeviceSettings& settings) {
+void SettingsStorage::save(const DeviceSettings& settings) {
   Preferences preferences;
   preferences.begin("device-config", false);
 

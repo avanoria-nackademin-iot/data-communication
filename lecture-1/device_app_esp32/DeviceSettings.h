@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Arduino.h>
+
 struct DeviceSettings {
   String deviceName;
   String deviceType;
@@ -16,4 +18,4 @@ struct DeviceSettings {
   String subnet;
   String dns1;
   String dns2;
-}
+};

@@ -10,4 +10,4 @@ class WifiConnection {
 
   private:
     bool setupMode = false;
-}
+};

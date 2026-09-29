@@ -24,4 +24,4 @@ class ConfigWebServer {
     void handleRoot();
     void handleSave();
     void handleNotFound();
-}
+};

@@ -231,7 +231,7 @@ String ConfigWebServer::buildPage() {
   page.replace("DEVICE_NAME", htmlEscape(settings.deviceName));
   page.replace("DEVICE_TYPE", htmlEscape(settings.deviceType));
   page.replace("DEVICE_LOCATION", htmlEscape(settings.deviceLocation));
-  page.replace("WIFI_NAME", htmlEscape(settings.wifiSsid));
+  page.replace("WIFI_NAME", htmlEscape(settings.wifiSSID));
   page.replace("SIGNAL", htmlEscape(signalStrength));
   page.replace("API_URL", htmlEscape(settings.apiUrl));
 
@@ -306,11 +306,11 @@ void ConfigWebServer::handleSave() {
     }
   }
 
-  if (newPassword.isEmpty() && newSsid == settings.wifiSsid) {
+  if (newPassword.isEmpty() && newSsid == settings.wifiSSID) {
     newPassword = settings.wifiPassword;
   }
 
-  if (newSsid != settings.wifiSsid && newPassword.isEmpty()) {
+  if (newSsid != settings.wifiSSID && newPassword.isEmpty()) {
     server.send(400, "text/plain; charset=utf-8",
                 "Ange lösenordet till det nya Wi-Fi-nätverket.");
     return;
@@ -319,7 +319,7 @@ void ConfigWebServer::handleSave() {
   settings.deviceName = newName;
   settings.deviceType = newType;
   settings.deviceLocation = newLocation;
-  settings.wifiSsid = newSsid;
+  settings.wifiSSID = newSsid;
   settings.wifiPassword = newPassword;
   settings.apiUrl = newApiUrl;
   settings.ipMode = newIpMode;
