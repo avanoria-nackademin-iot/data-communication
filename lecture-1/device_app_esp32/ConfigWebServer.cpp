@@ -246,12 +246,113 @@ String ConfigWebServer::buildPage() {
   page.replace("DNS2", htmlEscape(settings.dns2));
 
   return page;
-
 }
 
+void ConfigWebServer::handleRoot() {
+  server.send(200, "text/html; charset=utf-8", buildPage());
+}
 
+void ConfigWebServer::handleSave() {
+  if (!server.hasArg("name") ||
+      !server.hasArg("type") ||
+      !server.hasArg("location") ||
+      !server.hasArg("ssid") ||
+      !server.hasArg("apiUrl") ||
+      !server.hasArg("ipMode")) {
+    server.send(400, "text/plain; charset=utf-8",
+                "Formuläret saknar obligatoriska värden.");
+    return;
+  }
 
+  const String newName = server.arg("name");
+  const String newType = server.arg("type");
+  const String newLocation = server.arg("location");
+  const String newSsid = server.arg("ssid");
+  const String newApiUrl = server.arg("apiUrl");
+  const String newIpMode = server.arg("ipMode");
+  String newPassword = server.arg("password");
 
+  if (newName.isEmpty() || newType.isEmpty() || newLocation.isEmpty() || newSsid.isEmpty() || newApiUrl.isEmpty()) {
+    server.send(400, "text/plain; charset=utf-8",
+                "Fyll i namn, typ, plats, Wi-Fi-nätverk och API-adress.");
+    return;
+  }
+
+  if (newIpMode != "dhcp" && newIpMode != "static") {
+    server.send(400, "text/plain; charset=utf-8",
+                "Ogiltigt IP-läge.");
+    return;
+  }
+
+  if (newIpMode == "static") {
+    IPAddress testAddress;
+
+    if (!testAddress.fromString(server.arg("staticIp")) ||
+        !testAddress.fromString(server.arg("gateway")) ||
+        !testAddress.fromString(server.arg("subnet"))) {
+      server.send(400, "text/plain; charset=utf-8",
+                  "Ange en giltig IP-adress, gateway och nätmask.");
+      return;
+    }
+
+    const String dns1 = server.arg("dns1");
+    const String dns2 = server.arg("dns2");
+
+    if ((!dns1.isEmpty() && !testAddress.fromString(dns1)) ||
+        (!dns2.isEmpty() && !testAddress.fromString(dns2))) {
+      server.send(400, "text/plain; charset=utf-8",
+                  "DNS-adresserna måste vara giltiga IPv4-adresser.");
+      return;
+    }
+  }
+
+  if (newPassword.isEmpty() && newSsid == settings.wifiSsid) {
+    newPassword = settings.wifiPassword;
+  }
+
+  if (newSsid != settings.wifiSsid && newPassword.isEmpty()) {
+    server.send(400, "text/plain; charset=utf-8",
+                "Ange lösenordet till det nya Wi-Fi-nätverket.");
+    return;
+  }
+
+  settings.deviceName = newName;
+  settings.deviceType = newType;
+  settings.deviceLocation = newLocation;
+  settings.wifiSsid = newSsid;
+  settings.wifiPassword = newPassword;
+  settings.apiUrl = newApiUrl;
+  settings.ipMode = newIpMode;
+
+  if (newIpMode == "static") {
+    settings.staticIp = server.arg("staticIp");
+    settings.gateway = server.arg("gateway");
+    settings.subnet = server.arg("subnet");
+    settings.dns1 = server.arg("dns1");
+    settings.dns2 = server.arg("dns2");
+  }
+
+  storage.save(settings);
+
+  server.send(
+      200,
+      "text/html; charset=utf-8",
+      "<!DOCTYPE html><html lang='sv'><meta charset='utf-8'>"
+      "<meta name='viewport' content='width=device-width, initial-scale=1'>"
+      "<title>Configurations has been saved.</title>"
+      "<body style='font-family:Arial;padding:24px'>"
+      "<h1>Inställningarna är sparade</h1>"
+      "<p>Kortet startar om och använder de nya inställningarna.</p>"
+      "</body></html>");
+
+  delay(1200);
+  ESP.restart();
+}
+
+void ConfigWebServer::handleNotFound() {
+  server.sendHeader("Location", "/");
+  server.send(302, "text/plain", "");
+}
 
 
 
