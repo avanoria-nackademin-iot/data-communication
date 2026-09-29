@@ -97,28 +97,3 @@ bool WifiConnection::startSetupAccessPoint() {
 bool WifiConnection::isSetupMode() const {
   return setupMode;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
