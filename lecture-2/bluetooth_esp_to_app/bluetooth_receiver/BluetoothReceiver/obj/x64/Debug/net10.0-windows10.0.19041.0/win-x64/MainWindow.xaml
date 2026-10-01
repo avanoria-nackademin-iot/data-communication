@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="BluetoothReceiver.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BluetoothReceiver"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Bluetooth Receiver">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid Padding="40">
+        <StackPanel Spacing="20">
+
+            <TextBlock Text="BLE Sensor" FontSize="32" FontWeight="SemiBold" />
+            <TextBlock Text="Arduino Nano ESP32 + DHT11" FontSize="18" Opacity="0.7" />
+
+            <Button x:ConnectionId='2' x:Name="ConnectButton" Content="Search and Connect"                             Padding="20,10" />
+
+            <TextBlock x:ConnectionId='3' x:Name="StatusText" Text="Not connected" FontSize="16" />
+
+            <StackPanel Orientation="Horizontal">
+                <Border Padding="20" CornerRadius="8" BorderThickness="1">
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Temperature" FontSize="16" />
+                        <TextBlock x:ConnectionId='5' x:Name="TemperatureText" Text="-- °C" FontSize="40" FontWeight="SemiBold" />
+                    </StackPanel>
+                </Border>
+
+                <Border Padding="20" CornerRadius="8" BorderThickness="1">
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Humidity" FontSize="16" />
+                        <TextBlock x:ConnectionId='4' x:Name="HumidityText" Text="-- %" FontSize="40" FontWeight="SemiBold" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
+

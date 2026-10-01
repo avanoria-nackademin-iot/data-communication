@@ -1,0 +1,1 @@
+C:\Projects\IOT25\data-communication\lectures\lecture-2\bluetooth_esp_to_app\bluetooth_receiver\BluetoothReceiver\BluetoothReceiver.csproj;x64
