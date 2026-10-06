@@ -1,0 +1,1 @@
+C:\Users\HansMattin-Lassei\Desktop\mqtt-rec\mqtt-rec\measurementservice-winui-app\MeasurementApp\MeasurementApp.csproj;x64

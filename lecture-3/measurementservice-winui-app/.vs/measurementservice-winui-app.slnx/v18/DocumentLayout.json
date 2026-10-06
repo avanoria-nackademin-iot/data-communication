@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|c:\\users\\hansmattin-lassei\\desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\measurementapp\\services\\mqttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|solutionrelative:measurementapp\\services\\mqttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|c:\\users\\hansmattin-lassei\\desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\measurementapp\\models\\measurementmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|solutionrelative:measurementapp\\models\\measurementmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|c:\\users\\hansmattin-lassei\\desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\measurementapp\\models\\deviceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|solutionrelative:measurementapp\\models\\deviceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|c:\\users\\hansmattin-lassei\\desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\measurementapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|solutionrelative:measurementapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|c:\\users\\hansmattin-lassei\\desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\measurementapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|solutionrelative:measurementapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|c:\\users\\hansmattin-lassei\\desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\measurementapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{76B473AA-460D-67A9-A83C-91DDDA4187D6}|MeasurementApp\\MeasurementApp.csproj|solutionrelative:measurementapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MeasurementMessage.cs",
+              "DocumentMoniker": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\Models\\MeasurementMessage.cs",
+              "RelativeDocumentMoniker": "MeasurementApp\\Models\\MeasurementMessage.cs",
+              "ToolTip": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\Models\\MeasurementMessage.cs",
+              "RelativeToolTip": "MeasurementApp\\Models\\MeasurementMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T13:19:04.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeviceItem.cs",
+              "DocumentMoniker": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\Models\\DeviceItem.cs",
+              "RelativeDocumentMoniker": "MeasurementApp\\Models\\DeviceItem.cs",
+              "ToolTip": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\Models\\DeviceItem.cs",
+              "RelativeToolTip": "MeasurementApp\\Models\\DeviceItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T13:19:02.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MqttService.cs",
+              "DocumentMoniker": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\Services\\MqttService.cs",
+              "RelativeDocumentMoniker": "MeasurementApp\\Services\\MqttService.cs",
+              "ToolTip": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\Services\\MqttService.cs",
+              "RelativeToolTip": "MeasurementApp\\Services\\MqttService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwCoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T13:17:30.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MeasurementApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\App.xaml.cs",
+              "RelativeToolTip": "MeasurementApp\\App.xaml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T13:17:25.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MeasurementApp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\MainWindow.xaml",
+              "RelativeToolTip": "MeasurementApp\\MainWindow.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEgAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-04T18:25:25.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MeasurementApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\HansMattin-Lassei\\Desktop\\mqtt-rec\\mqtt-rec\\measurementservice-winui-app\\MeasurementApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MeasurementApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwF0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T18:22:41.899Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

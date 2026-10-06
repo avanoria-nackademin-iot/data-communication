@@ -33,8 +33,7 @@
               "ToolTip": "C:\\Projects\\IOT25\\data-communication\\lectures\\lecture-2\\bluetooth_esp_to_app\\bluetooth_receiver\\BluetoothReceiver\\Package.appxmanifest",
               "RelativeToolTip": "BluetoothReceiver\\Package.appxmanifest",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001793|",
-              "WhenOpened": "2026-10-01T10:22:57.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-01T10:22:57.748Z"
             },
             {
               "$type": "Document",
@@ -46,8 +45,7 @@
               "RelativeToolTip": "BluetoothReceiver\\MainWindow.xaml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-01T09:26:31.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-01T09:26:31.998Z"
             },
             {
               "$type": "Document",
@@ -57,7 +55,7 @@
               "RelativeDocumentMoniker": "BluetoothReceiver\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Projects\\IOT25\\data-communication\\lectures\\lecture-2\\bluetooth_esp_to_app\\bluetooth_receiver\\BluetoothReceiver\\MainWindow.xaml.cs",
               "RelativeToolTip": "BluetoothReceiver\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAYwH4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAQwHQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-01T09:02:17.082Z",
               "EditorCaption": ""
