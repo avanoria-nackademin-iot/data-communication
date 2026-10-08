@@ -19,7 +19,7 @@ public class MeasurementStore
             );
     }
 
-    public DeviceSnapshot[] GetSnapshots(DateTimeOffset now, TimeSpan staleAfter)
+    public DeviceSnapshot[] GetSnapshot(DateTimeOffset now, TimeSpan staleAfter)
     {
         return [.. _readings.Values
             .Select(device => device with {

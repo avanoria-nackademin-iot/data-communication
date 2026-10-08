@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClimateRpiGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9a22f3536cc83999ef7c35330f5d03c66918f6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+268827e4d5a6120ee78b84a05ddd7f9d710e301a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClimateRpiGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClimateRpiGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

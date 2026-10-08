@@ -104,6 +104,34 @@ public class MqttService(GatewayOptions options, MeasurementStore store) : IDisp
         return Task.CompletedTask;
     }
 
+    public async Task SetSendIntervalAsync(int intervalSeconds, CancellationToken cancellationToken)
+    {
+        if (intervalSeconds is < 2 or > 3600)
+            throw new ArgumentOutOfRangeException(nameof(intervalSeconds));
+
+        if (!_client.IsConnected)
+            throw new InvalidOperationException("The local MQTT broker is not connected.");
+
+        var payload = JsonSerializer.Serialize(new
+        {
+            command = "setSendInterval",
+            intervalSeconds
+        });
+
+        var message = new MqttApplicationMessageBuilder()
+            .WithTopic(CommandTopic)
+            .WithPayload(payload)
+            .WithQualityOfServiceLevel(MqttQualityOfServiceLevel.AtLeastOnce)
+            .WithRetainFlag(false)
+            .Build();
+
+        var result = await _client.PublishAsync(message, cancellationToken);
+
+        if ((int)result.ReasonCode >= 128)
+            throw new InvalidOperationException("The MQTT broker rejected the command.");
+
+        Console.WriteLine($"Published send interval command: {intervalSeconds} seconds.");
+    }
 
     public void Dispose()
     {

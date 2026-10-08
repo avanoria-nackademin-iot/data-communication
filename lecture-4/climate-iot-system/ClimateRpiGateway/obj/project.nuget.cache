@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Qa+k5zIhO9Q=",
+  "dgSpecHash": "lQxUsEDyxC8=",
   "success": true,
   "projectFilePath": "C:\\Projects\\IOT25\\data-communication\\lectures\\lecture-4\\climate-iot-system\\ClimateRpiGateway\\ClimateRpiGateway.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,10 @@
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\system.io.hashing\\6.0.0\\system.io.hashing.6.0.0.nupkg.sha512",
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\system.memory.data\\6.0.0\\system.memory.data.6.0.0.nupkg.sha512",
-    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm64\\10.0.12\\microsoft.netcore.app.runtime.linux-arm64.10.0.12.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm64\\10.0.12\\microsoft.aspnetcore.app.runtime.linux-arm64.10.0.12.nupkg.sha512",
+    "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm64\\10.0.12\\microsoft.netcore.app.host.linux-arm64.10.0.12.nupkg.sha512"
   ],
   "logs": []
 }
